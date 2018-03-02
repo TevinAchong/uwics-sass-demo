@@ -1,0 +1,86 @@
+/* Variables */
+/* Mixins */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #d9dbdd;
+  font-family: "Jura", sans-serif; }
+
+.left {
+  display: inline;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(42, 52, 77, 0.5), rgba(217, 219, 221, 0.5)), url("../img/left-back.jpg");
+  background-size: cover;
+  background-position: top;
+  float: left; }
+  .left__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2a344d;
+    font-size: 4rem;
+    border: 0.4rem solid #2a344d;
+    padding: 1rem; }
+
+.right {
+  display: inline;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  background-color: #2a344d;
+  float: right; }
+  .right__heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .right__heading-text {
+      font-size: 3.5rem;
+      margin-bottom: 5rem;
+      text-transform: uppercase; }
+    .right__heading-btn {
+      font-size: 2.2rem;
+      border: 2px solid #d9dbdd;
+      background-color: #d9dbdd;
+      padding: .8rem 3.4rem;
+      transition: all .8s; }
+      .right__heading-btn:link, .right__heading-btn:visited {
+        text-decoration: none;
+        color: #2a344d; }
+      .right__heading-btn:hover {
+        color: #d9dbdd;
+        background-color: #2a344d; }
+    .right__heading-social {
+      margin-top: 5rem;
+      font-size: 3rem; }
+      .right__heading-social--icon {
+        transition: all .8s; }
+        .right__heading-social--icon:not(:last-child) {
+          margin-right: 5rem; }
+        .right__heading-social--icon:nth-child(1):hover {
+          cursor: pointer;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(to right bottom, rgba(217, 219, 221, 0.8), rgba(0, 0, 255, 0.8)); }
+        .right__heading-social--icon:nth-child(2):hover {
+          cursor: pointer;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(to right bottom, rgba(217, 219, 221, 0.8), rgba(128, 0, 128, 0.8)); }
+        .right__heading-social--icon:nth-child(3):hover {
+          cursor: pointer;
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(to right bottom, rgba(217, 219, 221, 0.8), rgba(255, 0, 0, 0.8)); }
